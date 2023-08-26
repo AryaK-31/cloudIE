@@ -11,9 +11,9 @@ import carPic1 from "../Images/carouselPic1.jpg"
 import carPic2 from "../Images/carouselPic2.jpg"
 import carPic3 from "../Images/mangla.jpg"
 import carPic4 from "../Images/gadkari.jpg"
-import ls from "../Images/leenasharma.png";
+import st from "../Images/stcar.jpeg";
 import director from "../Images/director.jpg";
-import mca from "../Images/mca.jpg";
+import kk from "../Images/kkcar.jpg";
 
 
 
@@ -73,7 +73,7 @@ function TaskForce() {
                                 <div className="mt-4 h-1 w-[70%] bg-white ml-[15%]"></div>
                                 <div
                                     className="mt-4 h-[80px] w-[80px] md:h-[130px] md:w-[130px] lg:h-[100px] lg:w-[100px] 2xl:h-[120px] 2xl:w-[120px]  bg-red-700 ml-auto mr-auto rounded-[50%]  bg-cover bg-top"
-                                    style={{ backgroundImage: `url(${ls})` }}
+                                    style={{ backgroundImage: `url(${st})` }}
                                 ></div>
                                 <p className="mt-4 text-sm md:text-xl lg:text-base 2xl:text-lg">
                                     <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Dr. Sudeep Thepade,</span>Taskforce
@@ -89,7 +89,7 @@ function TaskForce() {
                                 <div className="mt-4 h-1 w-[70%] bg-white ml-[15%]"></div>
                                 <div
                                     className="mt-4 h-[80px] w-[80px] md:h-[130px] md:w-[130px] lg:h-[100px] lg:w-[100px] 2xl:h-[120px] 2xl:w-[120px] bg-red-700 ml-auto mr-auto rounded-[50%]  bg-cover bg-top"
-                                    style={{ backgroundImage: `url(${mca})` }}
+                                    style={{ backgroundImage: `url(${kk})` }}
                                 ></div>
                                 <p className="mt-4 text-sm md:text-x lg:text-base 2xl:text-lg">
                                     <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Dr. Kishor Kinage,</span>Taskforce
