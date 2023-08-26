@@ -20,7 +20,7 @@ import mca from "../Images/mca.jpg";
 
 function TaskForce() {
     return (
-        <div id="taskforce" className="min-h-[350vh] md:min-h-[290vh] lg:min-h-[180vh] bg-gradient-to-br from-pink-700 via-black to-black py-10 px-4">
+        <div id="taskforce" className="min-h-[350vh] md:min-h-[260vh] lg:min-h-[160vh] bg-gradient-to-br from-pink-700 via-black to-black py-10 px-4">
             <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="flex flex-col items-center gap-2">
                 <h1 className="text-5xl text-center font-bannerFont2 text-white">Our Team</h1>
                 <div className="h-[5px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[5%]"></div>
@@ -76,7 +76,7 @@ function TaskForce() {
                                     style={{ backgroundImage: `url(${ls})` }}
                                 ></div>
                                 <p className="mt-4 text-sm md:text-xl lg:text-base 2xl:text-lg">
-                                    <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Leena Sharma,</span>Convener
+                                    <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Dr. Sudeep Thepade,</span>Taskforce
                                 </p>
                             </div>
                         </div>
@@ -92,7 +92,7 @@ function TaskForce() {
                                     style={{ backgroundImage: `url(${mca})` }}
                                 ></div>
                                 <p className="mt-4 text-sm md:text-x lg:text-base 2xl:text-lg">
-                                    <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Anjana A,</span>Co Convener
+                                    <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Dr. Kishor Kinage,</span>Taskforce
                                 </p>
                             </div>
                         </div>

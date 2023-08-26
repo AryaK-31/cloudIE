@@ -1,201 +1,85 @@
-import React from 'react'
+import React from 'react';
+import nd from '../Images/nd.png'
+import st from '../Images/st.png'
+import ag from '../Images/ag.png'
+import sb from '../Images/sb.png'
+import ss from '../Images/ss.png'
+import kk from '../Images/kk.png'
+import nc from '../Images/nc.png'
 
-function TeamMembers() {
+const teamMembers = [
+    {
+        name: 'Dr. Nilkanth Chopade',
+        imageUrl: nc,
+    },
+    {
+        name: 'Dr. Sheetal Bhandari',
+        imageUrl: sb,
+    },
+    {
+        name: 'Dr. Sudeep Thepade',
+        imageUrl: st,
+    },
+    {
+        name: 'Dr. Swati Shinde',
+        imageUrl: ss,
+    },
+    {
+        name: 'Dr. Narendra Deore',
+        imageUrl: nd,
+    },
+    {
+        name: 'Dr. Ajay Gaikwad',
+        imageUrl: ag,
+    },
+    {
+        name: 'Dr. Kishor Kinage',
+        imageUrl: kk,
+        margin: true
+    },
+
+];
+
+function Team() {
     return (
-        <div>
-
-            <div className="flex items-center justify-center min-h-screen bg-white py-48">
-                <div className="flex flex-col">
-
-                    <div className="flex flex-col mt-8">
-
-                        <div className="container max-w-7xl px-4">
-
+        <div className='w-full bg-gradient-to-b to-black via-pink-700 from-black pb-16'>
+            <div className="flex items-start justify-center min-h-screen w-full">
+                <div className="flex flex-col w-full gap-24">
+                    <div className="flex flex-col mt-0 w-full">
+                        <div className="container max-w-full px-4 ">
                             <div className="flex flex-wrap justify-center text-center mb-24">
                                 <div className="w-full lg:w-6/12 px-4">
-
-                                    <h1 className="text-gray-900 text-4xl font-bold mb-8">
-                                        Meet the Team
-                                    </h1>
-
-                                    <p className="text-gray-700 text-lg font-light">
-                                        With over 100 years of combined experience, we've got a well-seasoned team at the helm.
-                                    </p>
+                                    <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="flex flex-col items-center gap-2">
+                                        <h1 className="text-5xl text-center font-bannerFont2 text-white">The Taskforce</h1>
+                                        <div className="h-[5px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[20%]"></div>
+                                    </div>
                                 </div>
                             </div>
-
-
-                            <div className="flex flex-wrap">
-
-                                <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
-                                    <div className="flex flex-col">
-
-                                        <a href="#" className="mx-auto">
-                                            <img alt='img desc' className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
-                                                src="https://images.unsplash.com/photo-1634926878768-2a5b3c42f139?fit=clamp&w=400&h=400&q=80" />
-                                        </a>
-
-
-                                        <div className="text-center mt-6">
-
-                                            <h1 className="text-gray-900 text-xl font-bold mb-1">
-                                                Tranter Jaskulski
-                                            </h1>
-
-                                            <div className="text-gray-700 font-light mb-2">
-                                                Founder & Specialist
-                                            </div>
-
-                                            <div className="flex items-center justify-center opacity-50 hover:opacity-100
-                                transition-opacity duration-300">
-
-                                                <a href="#" className="flex rounded-full hover:bg-indigo-50 h-10 w-10">
-                                                    <i className="mdi mdi-linkedin text-indigo-500 mx-auto mt-2"></i>
-                                                </a>
-
-
-                                                <a href="#" className="flex rounded-full hover:bg-blue-50 h-10 w-10">
-                                                    <i className="mdi mdi-twitter text-blue-300 mx-auto mt-2"></i>
-                                                </a>
-
-                                                <a href="#" className="flex rounded-full hover:bg-orange-50 h-10 w-10">
-                                                    <i className="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
-                                                </a>
+                            <div className="flex lg:justify-center flex-wrap gap-16">
+                                {teamMembers.map((member, index) => (
+                                    <div key={index} className={`w-full ${member.margin ? 'md:mx-auto lg:mx-0' : ''} md:w-[45%] lg:w-[20%] mb-6 px-6 sm:px-6 lg:px-4`}>
+                                        <div className="flex flex-col">
+                                            <a href="#" className="mx-auto">
+                                                <img className="rounded-full border-4 border-orange-500 bg-white drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
+                                                    src={member.imageUrl}
+                                                    alt={`Team member ${index}`}
+                                                />
+                                            </a>
+                                            <div className="text-center mt-6">
+                                                <h1 className="text-white text-xl font-bold mb-1">
+                                                    {member.name}
+                                                </h1>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
-                                    <div className="flex flex-col">
-
-                                        <a href="#" className="mx-auto">
-                                            <img alt='img desc' className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
-                                                src="https://images.unsplash.com/photo-1634896941598-b6b500a502a7?fit=clamp&w=400&h=400&q=80" />
-                                        </a>
-
-
-                                        <div className="text-center mt-6">
-
-                                            <h1 className="text-gray-900 text-xl font-bold mb-1">
-                                                Denice Jagna
-                                            </h1>
-
-
-                                            <div className="text-gray-700 font-light mb-2">
-                                                Tired & M. Specialist
-                                            </div>
-
-                                            <div className="flex items-center justify-center opacity-50 hover:opacity-100
-                                transition-opacity duration-300">
-
-                                                <a href="#" className="flex rounded-full hover:bg-indigo-50 h-10 w-10">
-                                                    <i className="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
-                                                </a>
-
-
-                                                <a href="#" className="flex rounded-full hover:bg-blue-50 h-10 w-10">
-                                                    <i className="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
-                                                </a>
-
-                                                <a href="#" className="flex rounded-full hover:bg-orange-50 h-10 w-10">
-                                                    <i className="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
-                                    <div className="flex flex-col">
-
-                                        <a href="#" className="mx-auto">
-                                            <img alt='img desc' className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
-                                                src="https://images.unsplash.com/photo-1634193295627-1cdddf751ebf?fit=clamp&w=400&h=400&q=80" />
-                                        </a>
-
-
-                                        <div className="text-center mt-6">
-
-                                            <h1 className="text-gray-900 text-xl font-bold mb-1">
-                                                Kenji Milton
-                                            </h1>
-
-
-                                            <div className="text-gray-700 font-light mb-2">
-                                                Team Memeber
-                                            </div>
-
-
-                                            <div className="flex items-center justify-center opacity-50 hover:opacity-100
-                                transition-opacity duration-300">
-
-                                                <a href="#" className="flex rounded-full hover:bg-indigo-50 h-10 w-10">
-                                                    <i className="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
-                                                </a>
-
-
-                                                <a href="#" className="flex rounded-full hover:bg-blue-50 h-10 w-10">
-                                                    <i className="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
-                                                </a>
-
-                                                <a href="#" className="flex rounded-full hover:bg-orange-50 h-10 w-10">
-                                                    <i className="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
-                                    <div className="flex flex-col">
-
-                                        <a href="#" className="mx-auto">
-                                            <img alt='img desc' className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
-                                                src="https://images.unsplash.com/photo-1635003913011-95971abba560?fit=clamp&w=400&h=400&q=80" />
-                                        </a>
-
-
-                                        <div className="text-center mt-6">
-
-                                            <h1 className="text-gray-900 text-xl font-bold mb-1">
-                                                Doesn't matter
-                                            </h1>
-
-
-                                            <div className="text-gray-700 font-light mb-2">
-                                                Will be fired
-                                            </div>
-
-
-                                            <div className="flex items-center justify-center opacity-50 hover:opacity-100
-                                transition-opacity duration-300">
-
-                                                <a href="#" className="flex rounded-full hover:bg-indigo-50 h-10 w-10">
-                                                    <i className="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
-                                                </a>
-
-                                                <a href="#" className="flex rounded-full hover:bg-blue-50 h-10 w-10">
-                                                    <i className="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
-                                                </a>
-
-
-                                                <a href="#" className="flex rounded-full hover:bg-orange-50 h-10 w-10">
-                                                    <i className="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default TeamMembers
+export default Team;

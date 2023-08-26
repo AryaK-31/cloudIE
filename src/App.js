@@ -11,6 +11,7 @@ import TaskForce from './components/Taskforce';
 import Timeline from './components/Timeline';
 import Footer from './components/Footer';
 import DevelopedBy from './components/DevelopedBy/DevelopedBy';
+import Team from "./components/TeamMembers";
 // import LandscapeModeOverlay from './components/LandscapeModeOverlay';
 
 
@@ -34,15 +35,17 @@ function App() {
   //   };
   // }, []);
 
+
   return (
+    
     <>
       <div id="lock" className='h-screen text-center w-full p-4 bg-black text-white text-xl'>
 
         <div className='mt-[18%]'>
-          The website is available on Moblie screens!
+          The website is available only on Portrait Mode!
           <br />
-          ⚠️The Site is still underdevelopment for desktop and laptop screens. <br />
-          Thank You For your Patience
+          ⚠️The Backend and few components are still under development. <br />
+          Thank You For your Patience.
         </div>
       </div>
       <div id="container" className='relative'>
@@ -51,6 +54,7 @@ function App() {
         <About />
         <Numbers />
         <TaskForce />
+        <Team />
         <Timeline />
         <EventPlanned />
         <Gallery />
