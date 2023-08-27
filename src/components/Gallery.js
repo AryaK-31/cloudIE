@@ -1,12 +1,12 @@
 import React from "react";
-import gallery1 from "../Images/gallery1.jpg";
-import gallery2 from "../Images/gallery2.jpg";
-import gallery3 from "../Images/gallery3.jpg";
-import gallery4 from "../Images/gallery4.jpg";
-import gallery5 from "../Images/gallery5.jpg";
-import gallery6 from "../Images/gallery6.jpg";
-import gallery7 from "../Images/gallery7.jpg";
-import gallery8 from "../Images/gallery8.jpg";
+import gallery1 from "../Images/gallery1.webp";
+import gallery2 from "../Images/gallery2.webp";
+import gallery3 from "../Images/gallery3.webp";
+import gallery4 from "../Images/gallery4.webp";
+import gallery5 from "../Images/gallery5.webp";
+import gallery6 from "../Images/gallery6.webp";
+import gallery7 from "../Images/gallery7.webp";
+import gallery8 from "../Images/gallery8.webp";
 // ... import other images
 
 const galleryData = [

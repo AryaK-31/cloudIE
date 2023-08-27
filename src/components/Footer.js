@@ -1,7 +1,7 @@
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import logo from '../Images/logo.png'
+import logo from '../Images/logo.webp'
 
 function Footer() {
     return (

@@ -1,8 +1,8 @@
 import React from 'react';
-import bg from '../Images/timBg.jpg';
-import food from '../Images/food.jpg'
-import trekking from '../Images/trekking.jpg'
-import marathon from '../Images/marathon.jpg'
+import bg from '../Images/timbg.webp';
+import food from '../Images/food.webp'
+import trekking from '../Images/trekking.webp'
+import marathon from '../Images/marathon.webp'
 import Card from '../components/Card'
 import Navbar from './Navbar';
 import { Link } from 'react-scroll';

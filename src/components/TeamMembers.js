@@ -1,11 +1,11 @@
 import React from 'react';
-import nd from '../Images/nd.png'
-import st from '../Images/st.png'
-import ag from '../Images/ag.png'
-import sb from '../Images/sb.png'
-import ss from '../Images/ss.png'
-import kk from '../Images/kk.png'
-import nc from '../Images/nc.png'
+import nd from '../Images/nd.webp'
+import st from '../Images/st.webp'
+import ag from '../Images/ag.webp'
+import sb from '../Images/sb.webp'
+import ss from '../Images/ss.webp'
+import kk from '../Images/kk.webp'
+import nc from '../Images/nc.webp'
 
 const teamMembers = [
     {

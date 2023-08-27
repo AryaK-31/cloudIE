@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import trek from '../Images/trekking.jpg';
-import food from '../Images/food.jpg';
-import walk from '../Images/marathon.jpg';
+import trek from '../Images/trekking.webp';
+import food from '../Images/food.webp';
+import walk from '../Images/marathon.webp';
 import { Offcanvas, Ripple, initTE } from 'tw-elements';
 
 function Announcement() {

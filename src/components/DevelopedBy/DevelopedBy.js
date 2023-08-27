@@ -1,8 +1,8 @@
 import './DevelopedBy.css'
-import arya from '../../Images/arya.jpg'
-import amb from '../../Images/amb.jpg'
-import khu from '../../Images/khu.jpg'
-import avi from '../../Images/avi.jpg'
+import arya from '../../Images/arya.webp'
+import amb from '../../Images/amb.webp'
+import khu from '../../Images/khu.webp'
+import avi from '../../Images/avi.webp'
 
 function DevelopedBy() {
     return (

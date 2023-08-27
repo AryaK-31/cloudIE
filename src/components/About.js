@@ -1,6 +1,6 @@
 import React from 'react'
-import bg from '../Images/bg-img.jpg'
-import logo from '../Images/logo.png'
+import bg from '../Images/bg-img.webp'
+import logo from '../Images/logo.webp'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

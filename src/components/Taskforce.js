@@ -1,12 +1,12 @@
 import { Carousel } from "flowbite-react";
-import taskFace from "../Images/taskFace.png";
-import carPic1 from "../Images/carouselPic1.jpg"
-import carPic2 from "../Images/carouselPic2.jpg"
-import carPic3 from "../Images/mangla.jpg"
-import carPic4 from "../Images/gadkari.jpg"
-import st from "../Images/stcar.jpeg";
-import director from "../Images/director.jpg";
-import kk from "../Images/kkcar.jpg";
+import taskFace from "../Images/taskFace.webp";
+import carPic1 from "../Images/carouselPic1.webp"
+import carPic2 from "../Images/carouselPic2.webp"
+import carPic3 from "../Images/mangla.webp"
+import carPic4 from "../Images/gadkari.webp"
+import st from "../Images/stcar.webp";
+import director from "../Images/director.webp";
+import kk from "../Images/kkcar.webp";
 
 
 
@@ -14,8 +14,8 @@ import kk from "../Images/kkcar.jpg";
 function TaskForce() {
     return (
         <div id="taskforce" className="min-h-[350vh] md:min-h-[260vh] lg:min-h-[160vh] bg-gradient-to-br from-pink-700 via-black to-black py-10 px-4">
-            <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="flex flex-col items-center gap-2">
-                <h1 className="text-5xl text-center font-bannerFont2 text-white">Our Team</h1>
+            <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="flex flex-col items-center gap-3">
+                <h1 className="text-5xl text-center font-bannerFont2 text-white">Insights</h1>
                 <div className="h-[5px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[5%]"></div>
             </div>
             <div className="lg:h-[60vh] h-[100vh] mt-8 flex flex-col gap-6 lg:gap-8 lg:flex-row justify-center">
