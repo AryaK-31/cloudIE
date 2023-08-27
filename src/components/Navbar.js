@@ -11,10 +11,10 @@ export default function Navbar() {
 
     const [nav, setNav] = useState(false)
     const [color, setColor] = useState('transparent')
-    const [textColor, setTextColor] = useState('orange-500')
+    const [textColor, setTextColor] = useState('whhite')
     const [bg, setBg] = useState('slate-800/60')
     const [border, setBorder] = useState('2')
-    const [borderCol, setBorderCol] = useState('[#F94C10]')
+    const [borderCol, setBorderCol] = useState('orange-600')
     const [type, setType] = useState('fixed')
     const [navLeft, setNavLeft] = useState(false)
 
@@ -36,7 +36,7 @@ export default function Navbar() {
                 setColor('transparent');
                 setTextColor('orange-600');
                 setType('static')
-                setBorderCol('[#F94C10]')
+                setBorderCol('orange-600')
 
             }
         };
