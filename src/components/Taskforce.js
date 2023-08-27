@@ -1,11 +1,4 @@
 import { Carousel } from "flowbite-react";
-
-// import group1 from "../Images/Group1.jpg";
-// import group2 from "../Images/Group2.jpg";
-// import group3 from "../Images/Group3.jpg";
-// import face1 from "../Images/face1.jpg";
-// import face2 from "../Images/face2.jpg";
-// import face3 from "../Images/face3.jpg";
 import taskFace from "../Images/taskFace.png";
 import carPic1 from "../Images/carouselPic1.jpg"
 import carPic2 from "../Images/carouselPic2.jpg"
@@ -123,7 +116,7 @@ function TaskForce() {
                                         href="mailto:leena.sharma@pccoepune.org">
                                         <i className="fab fa-instagram"></i>
                                     </a>
-                                    <a className="text-2xl lg:text-xl 2xl:text-2xl  a123" href=""><i className="fas fa-at"></i></a>
+                                    <a className="text-2xl lg:text-xl 2xl:text-2xl  a123" href="/"><i className="fas fa-at"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +135,7 @@ function TaskForce() {
                                     <a className="text-2xl lg:text-xl 2xl:text-2xl a123"
                                         href="https://www.linkedin.com/in/anjana-arakerimath-5789b9a/"><i className="fab fa-linkedin"></i></a>
                                     <a className="text-2xl lg:text-xl 2xl:text-2xl a123"
-                                        href="">
+                                        href="/">
                                         <i className="fab fa-instagram"></i>
                                     </a>
                                     <a className="text-2xl lg:text-xl 2xl:text-2xl a123" href="mailto:a.anjana@pccoepune.org"><i className="fas fa-at"></i></a>
@@ -164,7 +157,7 @@ function TaskForce() {
                                     <a className="text-2xl lg:text-xl 2xl:text-2xl a123"
                                         href="https://www.linkedin.com/in/santosh-pacharane-9052a417/"><i className="fab fa-linkedin"></i></a>
                                     <a className="text-2xl lg:text-xl 2xl:text-2xl a123"
-                                        href="">
+                                        href="/">
                                         <i className="fab fa-instagram"></i>
                                     </a>
                                     <a className="text-2xl lg:text-xl 2xl:text-2xl a123" href="mailto:santosh.pacharne@pccoepune.org"><i className="fas fa-at"></i></a>

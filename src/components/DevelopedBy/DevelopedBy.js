@@ -1,4 +1,3 @@
-// import React from 'react'
 import './DevelopedBy.css'
 import arya from '../../Images/arya.jpg'
 import amb from '../../Images/amb.jpg'
@@ -22,7 +21,7 @@ function DevelopedBy() {
                             <h3 className="h3123">Arya Kaslikar</h3>
                             <p className="p123">Front End Developer</p>
                             <div className="social-links123 text-white">
-                                <a className="a123" target='_blank'
+                                <a className="a123" 
                                     href="https://www.linkedin.com/in/arya-kaslikar-bb6957268/"><i className="fab fa-linkedin"></i>
                                 </a>
                                 <a className="a123"

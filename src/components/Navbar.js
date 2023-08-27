@@ -11,10 +11,10 @@ export default function Navbar() {
 
     const [nav, setNav] = useState(false)
     const [color, setColor] = useState('transparent')
-    const [textColor, setTextColor] = useState('whhite')
+    const [textColor, setTextColor] = useState('orange-400')
     const [bg, setBg] = useState('slate-800/60')
     const [border, setBorder] = useState('2')
-    const [borderCol, setBorderCol] = useState('orange-600')
+    const [borderCol, setBorderCol] = useState('border-orange-600')
     const [type, setType] = useState('fixed')
     const [navLeft, setNavLeft] = useState(false)
 
@@ -28,15 +28,15 @@ export default function Navbar() {
                 setTextColor('white');
                 setBorder('2')
                 setType('fixed')
-                setBorderCol('white')
+                setBorderCol('border-white')
 
             } else {
                 setBorder('2')
                 setBg('slate-800/60')
                 setColor('transparent');
-                setTextColor('orange-600');
+                setTextColor('orange-500');
                 setType('static')
-                setBorderCol('orange-600')
+                setBorderCol('border-orange-600')
 
             }
         };
@@ -88,12 +88,12 @@ export default function Navbar() {
     return (
         <>
             <div style={{ backgroundColor: `${color}`, transition: `background-color 0.3s ease`, position: `${type}` }} className={`z-[50] navbar text-white flex justify-between 2xl:px-20 2xl:py-8 lg:px-10 lg:py-4 font-bannerfont font-semibold text-lg md:static md:w-full `}>
-                <ul className={`tagline border-${border} border-${borderCol} bg-${bg}`}>
+                <ul className={`tagline border-${border} ${borderCol} bg-${bg}`}>
                     <h2 className={`tag 2xl:py-5 2xl:px-5 lg:px-2 lg:py-2 lg:text-base 2xl:text-xl text-${textColor}`}><span className='2xl:text-2xl lg:text-base'>--</span> Commit To Be Fit.</h2>
                     <GiHamburgerMenu onClick={handleNav} className={`icon lg:hidden text-2xl z-50`} />
 
                 </ul>
-                <ul className={`nav-items 2xl:text-xl lg:text-base flex 2xl:w-[36rem] lg:w-[35%]  bg-slate-900/60 text-white rounded-sm border border-1 border-${borderCol}`} >
+                <ul className={`nav-items 2xl:text-xl lg:text-base flex 2xl:w-[36rem] lg:w-[35%]  bg-slate-900/60 text-white rounded-sm border border-1 ${borderCol}`} >
                     <li className='2xl:py-5 2xl:px-8 2xl:w-[9rem] lg:px-2 lg:py-2 lg:w-[25%] text-center hover:bg-[#F94C10] hover:cursor-pointer transition duration-400'>
                         <Link
                             activeClass="active"

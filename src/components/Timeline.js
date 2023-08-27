@@ -21,13 +21,13 @@ const events = [
         title: 'Session on Healthy Life Living',
         description: 'A "Healthy Life Living Session" promotes holistic well-being, covering nutrition, fitness, stress management, and mental health. It empowers individuals to make sustainable lifestyle choices for improved overall health.',
         isLive: false,
-        isLive: true
+        isDone : true
     },
     {
         date: '26th August 2023',
         title: 'Trekking with Tree Plantation',
         description: '"Trekking with Tree Plantation" combines outdoor adventure with environmental conservation. Participants enjoy scenic hikes while actively contributing to reforestation efforts, fostering a deeper connection with nature.',
-        isLive: false
+        isLive: true
     },
     {
         date: '9th September 2023',

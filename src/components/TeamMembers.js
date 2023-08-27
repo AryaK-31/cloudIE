@@ -58,8 +58,8 @@ function Team() {
                             <div className="flex lg:justify-center flex-wrap gap-16">
                                 {teamMembers.map((member, index) => (
                                     <div key={index} className={`w-full ${member.margin ? 'md:mx-auto lg:mx-0' : ''} md:w-[45%] lg:w-[20%] mb-6 px-6 sm:px-6 lg:px-4`}>
-                                        <div className="flex flex-col">
-                                            <a href="#" className="mx-auto">
+                                        <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="flex flex-col">
+                                            <a href="/" className="mx-auto">
                                                 <img className="rounded-full border-4 border-orange-500 bg-white drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
                                                     src={member.imageUrl}
                                                     alt={`Team member ${index}`}
