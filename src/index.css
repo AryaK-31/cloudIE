@@ -335,7 +335,13 @@ code {
  #mftimg3{
   height: 16rem;
  }
-  
+ #footeremail {
+  font-size: 13px;
+
+}
+#footermob{
+  font-size: 13px
+}
 
   
 }
