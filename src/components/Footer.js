@@ -29,7 +29,7 @@ function Footer() {
                         <p>Non-Working Sat: Surprise Activities</p>
                         <p>Sun: Closed</p>
                     </div>
-                    <button id="footer_register_btn" className="py-3 2xl:py-3 lg:py-1 lg:mt-0 mt-4 px-8 2xl:px-8 lg:px-4 border border-1 border-pink-600 text-white text-2xl 2xl:text-2xl lg:text-lg font-bold tracking-widest hover:bg-pink-600 hover:text-white transistion duration-500">Register</button>
+                    {/* <button id="footer_register_btn" className="py-3 2xl:py-3 lg:py-1 lg:mt-0 mt-4 px-8 2xl:px-8 lg:px-4 border border-1 border-pink-600 text-white text-2xl 2xl:text-2xl lg:text-lg font-bold tracking-widest hover:bg-pink-600 hover:text-white transistion duration-500">Register</button> */}
                 </div>
 
             </div>
@@ -44,8 +44,8 @@ function Footer() {
                         <p>Pune - 411 044.</p>
                     </div>
                     <div className="text-[17px] 2xl:text-[17px] lg:text-[14px] tracking-wide">
-                        <p>Mail: pccoeadmin@gmail.com </p>
-                        <p>Contact: +91 8087174347</p>
+                        <p><i className="fas fa-at"></i> santosh.pacharne@pccoepune.org </p>
+                        <p><i class="fas fa-phone-alt"></i> : +91 8087174347</p>
                     </div>
                 </div>
                 <div className="w-full h-full lg:w-[32%] flex flex-col md:items-center md:justify-start lg:items-start">

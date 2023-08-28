@@ -7,6 +7,9 @@ import gallery5 from "../Images/gallery5.webp";
 import gallery6 from "../Images/gallery6.webp";
 import gallery7 from "../Images/gallery7.webp";
 import gallery8 from "../Images/gallery8.webp";
+import gallery9 from "../Images/gallery9.webp";
+import gallery10 from "../Images/gallery10.webp";
+import gallery11 from "../Images/gallery11.webp";
 // ... import other images
 
 const galleryData = [
@@ -52,17 +55,17 @@ const galleryData = [
     venue: "Venue: Location",
   },
   {
-    backgroundImage: gallery1,
+    backgroundImage: gallery9,
     title: "Marathon - 27/08/2023 - 14:00 PM IST",
     venue: "Venue: Location",
   },
   {
-    backgroundImage: gallery2,
+    backgroundImage: gallery10,
     title: "CrossFit - 27/08/2023 - 14:00 PM IST",
     venue: "Venue: Location",
   },
   {
-    backgroundImage: gallery1,
+    backgroundImage: gallery11,
     title: "Marathon - 27/08/2023 - 14:00 PM IST",
     venue: "Venue: Location",
   },

@@ -4,9 +4,11 @@ import carPic1 from "../Images/carouselPic1.webp"
 import carPic2 from "../Images/carouselPic2.webp"
 import carPic3 from "../Images/mangla.webp"
 import carPic4 from "../Images/gadkari.webp"
-import st from "../Images/stcar.webp";
 import director from "../Images/director.webp";
-import kk from "../Images/kkcar.webp";
+import hodcomp from "../Images/hodcomp.webp";
+import hodash from "../Images/hodash.webp";
+import ls from "../Images/ls.webp"
+import mca from "../Images/mca.webp"
 
 
 
@@ -53,7 +55,7 @@ function TaskForce() {
                                     style={{ backgroundImage: `url(${director})` }}
                                 ></div>
                                 <p className="mt-4 text-sm md:text-xl lg:text-base 2xl:text-lg">
-                                    <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Dr. Govind Kulkarni,</span>Director
+                                    <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Dr. Govind Kulkarni,</span> Director
                                 </p>
                             </div>
                         </div>
@@ -66,10 +68,10 @@ function TaskForce() {
                                 <div className="mt-4 h-1 w-[70%] bg-white ml-[15%]"></div>
                                 <div
                                     className="mt-4 h-[80px] w-[80px] md:h-[130px] md:w-[130px] lg:h-[100px] lg:w-[100px] 2xl:h-[120px] 2xl:w-[120px]  bg-red-700 ml-auto mr-auto rounded-[50%]  bg-cover bg-top"
-                                    style={{ backgroundImage: `url(${st})` }}
+                                    style={{ backgroundImage: `url(${hodcomp})` }}
                                 ></div>
                                 <p className="mt-4 text-sm md:text-xl lg:text-base 2xl:text-lg">
-                                    <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Dr. Sudeep Thepade,</span>Taskforce
+                                    <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Dr. K Rajeswari,</span> HOD Comp.
                                 </p>
                             </div>
                         </div>
@@ -82,11 +84,10 @@ function TaskForce() {
                                 <div className="mt-4 h-1 w-[70%] bg-white ml-[15%]"></div>
                                 <div
                                     className="mt-4 h-[80px] w-[80px] md:h-[130px] md:w-[130px] lg:h-[100px] lg:w-[100px] 2xl:h-[120px] 2xl:w-[120px] bg-red-700 ml-auto mr-auto rounded-[50%]  bg-cover bg-top"
-                                    style={{ backgroundImage: `url(${kk})` }}
+                                    style={{ backgroundImage: `url(${hodash})` }}
                                 ></div>
                                 <p className="mt-4 text-sm md:text-x lg:text-base 2xl:text-lg">
-                                    <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Dr. Kishor Kinage,</span>Taskforce
-                                </p>
+                                        <span className="font-bold text-sm md:text-xl lg:text-base 2xl:text-lg">Dr. S Sonar,</span> HOD AS&H</p>
                             </div>
                         </div>
                     </Carousel>
@@ -102,7 +103,7 @@ function TaskForce() {
                     <div className="bg-gray-300">
                         <div className="relative flex lg:flex-col md:flex-row flex-col items-center gap-4 h-[50vh] lg:h-[50vh] md:h-[30vh]">
                             <div className="relative flex items-center justify-center bg-pink-600 h-[40%] md:h-full lg:h-[45%] w-full ">
-                                <img alt='img desc' className=" lg:h-52 2xl:h-72 absolute bottom-0" src={taskFace} />
+                                <img id="mftimg" alt='img desc' className=" h-72 md:h-80 lg:h-52 2xl:h-80 absolute bottom-0" src={ls} />
                             </div>
                             <div className="flex flex-col items-center gap-4 justify-center md:p-2">
                                 <h1 className="text-2xl 2xl:text-3xl font-semibold">Dr. Leena Sharma</h1>
@@ -124,10 +125,10 @@ function TaskForce() {
                     <div className="bg-gray-300">
                         <div className="relative flex lg:flex-col md:flex-row flex-col items-center gap-4 h-[50vh] lg:h-[50vh] md:h-[30vh]">
                             <div className="relative flex items-center justify-center bg-pink-600 h-[40%] md:h-full lg:h-[45%] w-full ">
-                                <img alt='img desc' className="lg:h-52 2xl:h-72  absolute bottom-0" src={taskFace} />
+                                <img id="mftimg2" alt='img desc' className="h-80 md:h-96 lg:h-52 2xl:h-[22.5rem]  absolute bottom-0" src={mca} />
                             </div>
                             <div className="flex flex-col items-center gap-4 justify-center md:p-2">
-                                <h1 className="text-2xl  2xl:text-3xl font-semibold">Mrs. Anjana Arakerimath</h1>
+                                <h1 className="text-2xl  2xl:text-3xl font-semibold">Mrs. Anjana A</h1>
                                 <h1 className="text-base 2xl:text-lg font-medium">Co Convener</h1>
                                 <h1 className="md:text-base 2xl:text-lg">a.anjana@pccoepune.org</h1>
                                 <div className="h-[6px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[15%]"></div>
@@ -146,7 +147,7 @@ function TaskForce() {
                     <div className="bg-gray-300">
                         <div className="relative flex lg:flex-col md:flex-row flex-col items-center gap-4 h-[50vh] lg:h-[50vh] md:h-[30vh]">
                             <div className="relative flex items-center justify-center bg-pink-600 h-[40%] md:h-full lg:h-[45%] w-full ">
-                                <img alt='img desc' className="lg:h-52 2xl:h-72  absolute bottom-0" src={taskFace} />
+                                <img id="mftimg3" alt='img desc' className="h-72 lg:h-52 2xl:h-72  absolute bottom-0" src={taskFace} />
                             </div>
                             <div className="flex flex-col items-center gap-4 justify-center md:p-2">
                                 <h1 className="text-2xl 2xl:text-3xl font-semibold">Mr. Santosh Pacharne</h1>

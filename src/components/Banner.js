@@ -3,6 +3,7 @@ import bg from '../Images/timbg.webp';
 import food from '../Images/food.webp'
 import trekking from '../Images/trekking.webp'
 import marathon from '../Images/marathon.webp'
+import hasya from '../Images/hasya.webp'
 import Card from '../components/Card'
 import Navbar from './Navbar';
 import { Link } from 'react-scroll';
@@ -52,9 +53,9 @@ export default function Banner() {
 
                 
                 <div id='bannercardsec' className="hidden lg:grid lg:grid-cols-3 lg:w-[47%]  lg:absolute lg:h-[40%] justify-between gap-2 bottom-[4%] left-[4%]">
-                    <Card func={truncate('Trek & Tree Plantation',17)} status="Upcoming" cardImg={trekking} sportType='Trekking' cov="object-cover" pos="object-center" date='26/08/2023' className="w-[30%]" />
-                    <Card func={truncate('Walkathon',17)} status="Upcoming" cardImg={marathon} sportType='Walking' cov="bg-cover" pos="bg-center" date='09/09/2023' className="w-[30%]"/>
-                    <Card func={truncate('Healthy Food Fair',17)} status="Upcoming" cardImg={food} sportType='Fair' cov="bg-cover" pos="bg-bottom"  date='23/09/2023' className="w-[30%]"/>
+                    <Card url='/' func={truncate('Trek & Tree Plantation',17)} status="Upcoming" cardImg={trekking} sportType='Trekking' cov="object-cover" pos="object-center" date='02-09-2023' className="w-[30%]" />
+                    <Card url="https://forms.gle/ubQVc1ZAUwysHuJv5" func={truncate('Healthy Food Fair',17)} status="Upcoming" cardImg={food} sportType='Fair' cov="bg-cover" pos="bg-bottom"  date='23-09-2023' className="w-[30%]"/>
+                    <Card url='https://forms.gle/7jHuvV4adQNfz7kD9' func={truncate('हास्य जत्रा',17)} status="Upcoming" cardImg={hasya} sportType='Walking' cov="bg-cover" pos="bg-center" date='14-10-2023' className="w-[30%]"/>
                 </div>
                 
             </div>

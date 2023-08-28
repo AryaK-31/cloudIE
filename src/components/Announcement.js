@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import trek from '../Images/trekking.webp';
 import food from '../Images/food.webp';
-import walk from '../Images/marathon.webp';
+import hasya from '../Images/hasya.webp';
 import { Offcanvas, Ripple, initTE } from 'tw-elements';
 
 function Announcement() {
@@ -10,24 +10,27 @@ function Announcement() {
         {
             title: 'Trek & Plant',
             description: 'Trekking with Tree Plantation" combines outdoor adventure with environmental conservation. Participants enjoy scenic hikes while actively contributing to reforestation efforts, fostering a deeper connection with nature',
-            img:trek,
-            link: '#',
+            img: trek,
+            link: '/',
+            date: '02/09/2023',
         },
         {
-            title: 'Walk-a-thon',
-            description: '"Walkathons" are community events promoting physical fitness and social awareness. Participants walk for charitable causes, raising funds and fostering a sense of community while supporting important initiatives',
-            img:food,
-            link: '#',
-        },
-        {
-            title: 'Cyclothon',
+            title: 'Healthy Food Fair',
             description: 'A "Healthy Food Fair" showcases nutritious and delicious culinary options, encouraging informed dietary choices. Attendees can explore diverse flavors and gain nutritional insights, promoting a healthier lifestyle.',
-            img:walk,
-            link: '#',
-        }
-        
+            img: food,
+            link: 'https://forms.gle/ubQVc1ZAUwysHuJv5',
+            date: '23/09/2023'
+        },
+        {
+            title: 'हास्य जत्रा',
+            description: '"हास्य जत्रा" features musicians, jugglers, stilt walkers, and other merry-makers. Young paraders are welcome .Wear something flashy or borrow something . Positive individual or group expressions are encouraged to be a part of this fantastic show of collective effervescence. Join in!',
+            img: hasya,
+            link: 'https://forms.gle/7jHuvV4adQNfz7kD9',
+            date: '14/10/2023'
+        },
 
-        
+
+
     ];
     useEffect(() => {
         initTE({ Offcanvas, Ripple });
@@ -46,7 +49,7 @@ function Announcement() {
                 data-te-ripple-init
                 data-te-ripple-color="light"
             >
-                <div   className='flex z-50 items-center justify-center'>
+                <div className='flex z-50 items-center justify-center'>
                     <h1 className="text-xs 2xl:text-lg">📢</h1>
                     <h1 className="text-xs 2xl:text-lg">Announcement</h1>
                 </div>
@@ -114,16 +117,19 @@ function Announcement() {
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                                     {announcement.description}
                                 </p>
-                                <a
-                                    href={announcement.link}
-                                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-600 rounded-lg hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                                >
-                                    Read more
-                                    <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                    </svg>
-
-                                </a>
+                                <div className='flex items-center justify-start gap-2'>
+                                    <a
+                                        href={announcement.link}
+                                        target='_blank'
+                                        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-600 rounded-lg hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                    >
+                                        Register
+                                        <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                        </svg>
+                                    </a>
+                                    <p className='text-pink-600 text-lg font-medium px-2 py-1 rounded-xl'> - {announcement.date} </p>
+                                </div>
                             </div>
                         </div>
                     ))}

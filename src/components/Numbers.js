@@ -78,7 +78,7 @@ function Numbers() {
   return (
     <div id="numbers" className="lg:p-10 px-2 py-1 min-h-screen lg:min-h-0  md:min-h-0 lg:h-auto flex flex-col md:flex-row md:h-auto md:p-6 lg:flex-row justify-center 2xl:gap-48 gap-12 md:gap-32 sm:flex-col sm:items-center">
 
-      <div className='flex flex-col lg:flex-row gap-12 md:gap-32 2xl:gap-48'>
+      <div className='flex flex-col lg:flex-row gap-12 md:gap-20 lg:gap-32 2xl:gap-48'>
         <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className='flex flex-col items-center gap-1'>
           <AiFillCalendar className='text-6xl text-pink-700' />
           <h1 className='text-3xl font-bold'>{count1}</h1>
@@ -92,7 +92,7 @@ function Numbers() {
           <h1 className='text-xl md:text-center'>Events Planned</h1>
         </div>
       </div>
-      <div className='flex flex-col lg:flex-row gap-12 md:gap-32 2xl:gap-48'>
+      <div className='flex flex-col lg:flex-row gap-12 md:gap-20 lg:gap-32 2xl:gap-48'>
         <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className='flex flex-col items-center gap-1'>
           <FaPeopleGroup className='text-6xl text-pink-700' />
           <h1 className='text-3xl font-bold'>{count3}+</h1>
