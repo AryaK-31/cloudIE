@@ -83,7 +83,7 @@ function Timeline() {
                                 <div className="absolute w-3 h-3 bg-white rounded-full mt-1.5 -left-1.5"></div>
                                 <div className="head flex items-center gap-4 ">
                                     <time className="text-lg md:text-3xl lg:text-xl 2xl:text-lg font-normal leading-none text-gray-300">{event.date}</time>
-                                    {event.isDone ? <h1 className='done-glow bg-black text-white  border-2 border-green-600 px-1 md:text-lg text-sm lg:text-sm'>DONE</h1> : (event.isLive ? <h1 className='text-white'><span className='live-glow bg-black text-white  border-2 border-red-600 px-1 text-sm md:text-lg lg:text-sm'>🔴 LIVE</span> - Register Now </h1> : <h1 className='text-white md:text-lg text-sm lg:text-sm'> -- Upcoming</h1>)}
+                                    {event.isDone ? <h1 className='done-glow bg-black text-white  border-2 border-green-600 px-1 md:text-lg text-sm lg:text-sm'>DONE</h1> : (event.isLive ? <h1 className='text-white'><span className='live-glow bg-black text-white  border-2 border-red-600 px-1 text-sm md:text-lg lg:text-sm'>🔴 LIVE</span> - Register </h1> : <h1 className='text-white md:text-lg text-sm lg:text-sm'> -- Upcoming</h1>)}
                                 </div>
                                 <h3 className="text-2xl md:text-4xl lg:text-2xl 2xl:text-2xl font-medium text-pink-600 ">{event.title}</h3>
                                 <p className="text-lg md:text-xl  lg:text-base 2xl:text-lg font-normal text-white ">{event.description}</p>

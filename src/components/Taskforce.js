@@ -99,7 +99,7 @@ function TaskForce() {
                     <div className="text-center text-3xl md:text-5xl lg:text-4xl font-semibold text-white font-bannerFont2">Main Foundation Team</div>
                     <div className="h-[5px] bg-gradient-to-r from-orange-500 to-pink-600 w-[40%] lg:w-[10%]"></div>
                 </div>
-                <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="pt-36 lg:px-12 grid grid-cols-1 lg:grid-cols-3 gap-28 lg:gap-0">
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="pt-36 lg:px-12 grid grid-cols-1 lg:grid-cols-3 gap-32 lg:gap-0">
                     <div className="bg-gray-300">
                         <div className="relative flex lg:flex-col md:flex-row flex-col items-center gap-4 h-[50vh] lg:h-[50vh] md:h-[30vh]">
                             <div className="relative flex items-center justify-center bg-pink-600 h-[40%] md:h-full lg:h-[45%] w-full ">
