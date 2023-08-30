@@ -3,14 +3,14 @@ import trailer from '../Videos/trailer.mp4'
 
 const events = [
     {
-        date: '8th July 2023',
+        date: '8th Jul 2023',
         title: 'Session on Work Life Balance !',
         description: 'A "Work-Life Balance Session" imparts strategies for effectively managing work and personal life. It cultivates time management, boundary setting, and self-care skills to enhance overall well-being.',
         isLive: false,
         isDone: true
     },
     {
-        date: '22nd July 2023',
+        date: '22nd Jul 2023',
         title: 'Problem Solving / Critical thinking',
         description: '"Problem Solving/Critical Analysis" sessions cultivate skills for identifying, analyzing, and resolving complex issues. Participants learn logical thinking, creative solutions, and evidence-based decision-making, enhancing their problem-solving capabilities.',
         isLive: false,
@@ -18,38 +18,38 @@ const events = [
 
     },
     {
-        date: '12th August 2023',
+        date: '12th Aug 2023',
         title: 'Session on Healthy Life Living',
         description: 'A "Healthy Life Living Session" promotes holistic well-being, covering nutrition, fitness, stress management, and mental health. It empowers individuals to make sustainable lifestyle choices for improved overall health.',
         isLive: false,
         isDone: true
     },
     {
-        date: '9th September 2023',
+        date: '9th Sept 2023',
         title: 'Trekking with Tree Plantation',
         description: '"Trekking with Tree Plantation" combines outdoor adventure with environmental conservation. Participants enjoy scenic hikes while actively contributing to reforestation efforts, fostering a deeper connection with nature.',
         isLive: false
     },
     {
-        date: '23rd September 2023',
+        date: '23rd Sept 2023',
         title: 'Healthy Food Fair',
         description: 'A "Healthy Food Fair" showcases nutritious and delicious culinary options, encouraging informed dietary choices. Attendees can explore diverse flavors and gain nutritional insights, promoting a healthier lifestyle.',
         isLive: true
     },
     {
-        date: '14th October 2023',
+        date: '14th Oct 2023',
         title: 'हास्य जत्रा',
         description: '"हास्य जत्रा" features musicians, jugglers, stilt walkers, and other merry-makers. Young paraders are welcome .Wear something flashy or borrow something . Positive individual or group expressions are encouraged to be a part of this fantastic show of collective effervescence. Join in!',
         isLive: true
     },
     {
-        date: '28th October 2023',
+        date: '28th Oct 2023',
         title: 'Meditation Activities',
         description: '"Meditation activities" encompass mindfulness practices like guided meditation and deep breathing, fostering inner peace, mental clarity, and relaxation. These techniques enhance well-being and reduce stress.',
         isLive: false
     },
     {
-        date: '23rd December 2023',
+        date: '23rd Dec 2023',
         title: 'Traditional Games [Family Day]',
         description: '"Traditional Games (Family Day)" celebrates generational bonding with timeless activities such as sack races and board games, fostering family togetherness through classic pastimes and shared laughter.',
         isLive: false
