@@ -15,7 +15,7 @@ import mca from "../Images/mca.webp"
 
 function TaskForce() {
     return (
-        <div id="taskforce" className="min-h-[350vh] md:min-h-[260vh] lg:min-h-[160vh] bg-gradient-to-br from-pink-700 via-black to-black py-10 px-4">
+        <div id="taskforce" className="min-h-[290vh] md:min-h-[220vh] lg:min-h-[160vh] bg-gradient-to-br from-pink-700 via-black to-black py-10 px-4">
             <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="flex flex-col items-center gap-3">
                 <h1 className="text-5xl text-center font-bannerFont2 text-white">Insights</h1>
                 <div className="h-[5px] bg-gradient-to-r from-orange-500 to-pink-600 w-[20%] lg:w-[5%]"></div>
@@ -99,7 +99,7 @@ function TaskForce() {
                     <div className="text-center text-3xl md:text-5xl lg:text-4xl font-semibold text-white font-bannerFont2">Main Foundation Team</div>
                     <div className="h-[5px] bg-gradient-to-r from-orange-500 to-pink-600 w-[40%] lg:w-[10%]"></div>
                 </div>
-                <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="pt-36 lg:px-12 grid grid-cols-1 lg:grid-cols-3 gap-32 lg:gap-0">
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1300" className="pt-36 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-32 lg:gap-8 lg:w-[80%] mx-auto">
                     <div className="bg-gray-300">
                         <div className="relative flex lg:flex-col md:flex-row flex-col items-center gap-4 h-[50vh] lg:h-[50vh] md:h-[30vh]">
                             <div className="relative flex items-center justify-center bg-pink-600 h-[40%] md:h-full lg:h-[45%] w-full ">
@@ -144,7 +144,7 @@ function TaskForce() {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-gray-300">
+                    {/* <div className="bg-gray-300">
                         <div className="relative flex lg:flex-col md:flex-row flex-col items-center gap-4 h-[50vh] lg:h-[50vh] md:h-[30vh]">
                             <div className="relative flex items-center justify-center bg-pink-600 h-[40%] md:h-full lg:h-[45%] w-full ">
                                 <img id="mftimg3" alt='img desc' className="h-72 lg:h-52 2xl:h-72  absolute bottom-0" src={taskFace} />
@@ -165,7 +165,7 @@ function TaskForce() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
