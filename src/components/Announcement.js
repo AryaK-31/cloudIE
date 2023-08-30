@@ -2,18 +2,29 @@ import React, { useEffect } from 'react';
 import trek from '../Images/trekking.webp';
 import food from '../Images/food.webp';
 import hasya from '../Images/hasya.webp';
+import badm from '../Images/badmintonol.webp';
 import { Offcanvas, Ripple, initTE } from 'tw-elements';
 
 function Announcement() {
     const [numOfAnn, setNumOfAnn] = React.useState(0)
     const announcements = [
         {
+            title: 'Badminton',
+            description: "All the FY, SY, TY, BE, ME, MCA, and B.Voc students are here to inform you that our sports department and MESA Cell jointly organizing the Inter Class Badminton (Boys & Girls) Competition under PCCOE Olympics.",
+            img: badm,
+            link: 'https://forms.gle/7jHuvV4adQNfz7kD9',
+            date: '02/09/2023',
+            status: true,
+            olympics : true
+        },
+        {
             title: 'Trek & Plant',
             description: 'Trekking with Tree Plantation" combines outdoor adventure with environmental conservation. Participants enjoy scenic hikes while actively contributing to reforestation efforts, fostering a deeper connection with nature',
             img: trek,
             link: '',
             date: '09/09/2023',
-            status: false
+            status: false,
+            olympics : false
         },
         {
             title: 'Healthy Food Fair',
@@ -21,7 +32,8 @@ function Announcement() {
             img: food,
             link: 'https://forms.gle/ubQVc1ZAUwysHuJv5',
             date: '23/09/2023',
-            status: true
+            status: true,
+            olympics : false
         },
         {
             title: 'हास्य जत्रा',
@@ -29,7 +41,8 @@ function Announcement() {
             img: hasya,
             link: 'https://forms.gle/7jHuvV4adQNfz7kD9',
             date: '14/10/2023',
-            status: true
+            status: true,
+            olympics : false
         },
 
 
@@ -102,14 +115,15 @@ function Announcement() {
                     {announcements.map((announcement, index) => (
                         <div
                             key={index}
-                            className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 mb-8"
+                            className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 mb-8 relative"
                         >
                             <a href={announcement.link}>
                                 <img
-                                    className="rounded-t-lg"
+                                    className="rounded-t-lg "
                                     src={announcement.img}
                                     alt=""
                                 />
+                                {announcement.olympics? <div className='absolute top-2 left-2 py-1 rounded-xl px-2 bg-black text-white'> 🔥Olympics</div> : ""} 
                             </a>
                             <div className="p-5">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

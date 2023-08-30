@@ -3,6 +3,12 @@ import trailer from '../Videos/trailer.mp4'
 
 const events = [
     {
+        date: '2 Sept 2023',
+        title: 'Badminton - PCCOE Olympics!',
+        description: 'All the FY, SY, TY, BE, ME, MCA, and B.Voc students are here to inform you that our sports department and MESA Cell jointly organizing the Inter Class Badminton (Boys & Girls) Competition under PCCOE Olympics.',
+        isLive: true,
+    },
+    {
         date: '8th Jul 2023',
         title: 'Session on Work Life Balance !',
         description: 'A "Work-Life Balance Session" imparts strategies for effectively managing work and personal life. It cultivates time management, boundary setting, and self-care skills to enhance overall well-being.',

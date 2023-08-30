@@ -2,24 +2,74 @@ import React from 'react';
 import bg from '../Images/timbg.webp';
 import food from '../Images/food.webp'
 import trekking from '../Images/trekking.webp'
-import marathon from '../Images/marathon.webp'
+import badm from '../Images/badmintonol.webp';
 import hasya from '../Images/hasya.webp'
 import Card from '../components/Card'
 import Navbar from './Navbar';
 import { Link } from 'react-scroll';
 
 
+function truncate(str, max_chars) {
+    if (str.length <= max_chars) {
+        return str;
+    } else {
+        return str.substring(0, max_chars) + '...';
+    }
+}
 
+const cardData = [
+    {
+        url: 'https://maps.app.goo.gl/2itC9R2Mu4uwMyr3A',
+        func: truncate('PCCOE Olympics', 17),
+        status: false,
+        cardImg: badm,
+        sportType: 'Badminton',
+        cov: 'object-cover',
+        pos: 'object-center',
+        date: '02-09-2023',
+        className: 'w-[30%]'
+    },
+    {
+        url: 'https://forms.gle/ubQVc1ZAUwysHuJv5',
+        func: truncate('Healthy Food Fair', 17),
+        status: false,
+        cardImg: food,
+        sportType: 'Fair',
+        cov: 'bg-cover',
+        pos: 'bg-bottom',
+        date: '23-09-2023',
+        className: 'w-[30%]'
+    },
+    {
+        url: 'https://forms.gle/7jHuvV4adQNfz7kD9',
+        func: truncate('हास्य जत्रा', 17),
+        status: false,
+        cardImg: hasya,
+        sportType: 'Walking',
+        cov: 'bg-cover',
+        pos: 'bg-center',
+        date: '14-10-2023',
+        className: 'w-[30%]'
+    }
+];
+
+const renderedCards = cardData.map((card, index) => (
+    <Card
+        key={index}
+        url={card.url}
+        func={card.func}
+        status={card.status}
+        cardImg={card.cardImg}
+        sportType={card.sportType}
+        cov={card.cov}
+        pos={card.pos}
+        date={card.date}
+        className={card.className}
+    />
+));
 
 export default function Banner() {
 
-    function truncate(str, max_chars) {
-        if (str.length <= max_chars) {
-            return str;
-        } else {
-            return str.substring(0, max_chars) + '...';
-        }
-    }
     return (
         <div>
             <div id="home" className='banner h-screen w-full bg-cover lg:bg-center relative' style={{ backgroundImage: `url(${bg})` }}>
@@ -33,16 +83,16 @@ export default function Banner() {
                     </div>
 
                     <button id='xploremore' className='border border-1 px-6 py-2 lg:px-4 lg:py-1 2xl:px-6 2xl:py-2 text-xl lg:text-base 2xl:text-xl mt-10 lg:mt-5 2xl:mt-10 rounded-md hover:bg-[#ff0054] hover:border-[#ff0054] transition duration-300 font-bannerfont '><Link
-                            activeClass="active"
-                            to="timeline"
-                            spy={true}
-                            smooth={true}
-                            offset={-100} // Adjust the offset as needed
-                            duration={500} // Adjust the duration of the scroll animation
-                        >
-                            Xplore More
+                        activeClass="active"
+                        to="timeline"
+                        spy={true}
+                        smooth={true}
+                        offset={-100} // Adjust the offset as needed
+                        duration={500} // Adjust the duration of the scroll animation
+                    >
+                        Xplore More
 
-                        </Link></button>
+                    </Link></button>
 
                 </div>
 
@@ -51,13 +101,11 @@ export default function Banner() {
                     <h4 className='text-lg 2xl:text-lg lg:text-sm mt-4 font-bannerfont'> - Alex Trevor</h4>
                 </div>
 
-                
-                <div id='bannercardsec' className="hidden lg:grid lg:grid-cols-3 lg:w-[47%]  lg:absolute lg:h-[40%] justify-between gap-2 bottom-[4%] left-[4%]">
-                    <Card url='/' func={truncate('Trek & Tree Plantation',17)} status={true} cardImg={trekking} sportType='Trekking' cov="object-cover" pos="object-center" date='09-09-2023' className="w-[30%]" />
-                    <Card url="https://forms.gle/ubQVc1ZAUwysHuJv5" func={truncate('Healthy Food Fair',17)} status={false} cardImg={food} sportType='Fair' cov="bg-cover" pos="bg-bottom"  date='23-09-2023' className="w-[30%]"/>
-                    <Card url='https://forms.gle/7jHuvV4adQNfz7kD9' func={truncate('हास्य जत्रा',17)} status={false}cardImg={hasya} sportType='Walking' cov="bg-cover" pos="bg-center" date='14-10-2023' className="w-[30%]"/>
+
+                <div id='bannercardsec' className="hidden lg:grid lg:grid-cols-3 lg:w-[47%] lg:absolute lg:h-[40%] justify-between gap-2 bottom-[4%] left-[4%]">
+                    {renderedCards}
                 </div>
-                
+
             </div>
         </div>
     );
