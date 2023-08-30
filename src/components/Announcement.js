@@ -12,7 +12,7 @@ function Announcement() {
             title: 'Badminton',
             description: "All the FY, SY, TY, BE, ME, MCA, and B.Voc students are here to inform you that our sports department and MESA Cell jointly organizing the Inter Class Badminton (Boys & Girls) Competition under PCCOE Olympics.",
             img: badm,
-            link: 'https://forms.gle/7jHuvV4adQNfz7kD9',
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSeWmBWEBsoq0AnjMAMGNVrbkSBL_cTBmTWZ6X4DjIMuU5oKyQ/viewform?usp=sharing',
             date: '02/09/2023',
             status: true,
             olympics : true

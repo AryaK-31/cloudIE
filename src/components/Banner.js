@@ -19,7 +19,7 @@ function truncate(str, max_chars) {
 
 const cardData = [
     {
-        url: 'https://maps.app.goo.gl/2itC9R2Mu4uwMyr3A',
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSeWmBWEBsoq0AnjMAMGNVrbkSBL_cTBmTWZ6X4DjIMuU5oKyQ/viewform?usp=sharing',
         func: truncate('PCCOE Olympics', 17),
         status: false,
         cardImg: badm,
