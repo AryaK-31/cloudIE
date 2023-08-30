@@ -11,7 +11,7 @@ function Footer() {
                     <div className="heading tracking-widest w-full justify-center items-center flex flex-row md:flex-row md:gap-4 lg:flex-col lg:gap-0 gap-2">
                         <img alt='img desc' id="footerlogo" className="h-52 lg:h-[150px] 2xl:h-[220px]" src={logo} />
                     </div>
-                    <div id="footericons"  className="flex gap-3 text-2xl 2xl:text-2xl lg:text-lg items-center justify-center w-full">
+                    <div id="footericons" className="flex gap-3 text-2xl 2xl:text-2xl lg:text-lg items-center justify-center w-full">
                         <FaFacebookF />
                         <FaInstagram />
                         <FaYoutube />
@@ -44,8 +44,8 @@ function Footer() {
                         <p>Pune - 411 044.</p>
                     </div>
                     <div className="text-[17px] 2xl:text-[17px] lg:text-[14px] tracking-wide">
-                        <p><i className="fas fa-at"></i> santosh.pacharne@pccoepune.org </p>
-                        <p><i class="fas fa-phone-alt"></i> : +91 8087174347</p>
+                        <p id="footeremail"><i className="fas fa-at"></i> santosh.pacharne@pccoepune.org </p>
+                        <p id="footermob"><i class="fas fa-phone-alt"></i> : +91 8087174347</p>
                     </div>
                 </div>
                 <div className="w-full h-full lg:w-[32%] flex flex-col md:items-center md:justify-start lg:items-start">
@@ -59,7 +59,7 @@ function Footer() {
                         <li className=" hover:text-gray-300">Activities</li>
                         <li className=" hover:text-gray-300">Contact</li>
                     </ul>
-                   
+
 
                 </div>
 
