@@ -215,7 +215,7 @@ code {
   .tag {
     padding: 0;
     /* color: #e96202*/
-  } 
+  }
 
   .icon {
     display: block;
@@ -261,49 +261,72 @@ code {
   }
 }
 
-#lock{ display:none; }
-    @media screen and (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
-  #lock{ display:block; }
-  #container{ display:none; }
+#lock {
+  display: none;
 }
- @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
-   #lock{ display:none; }
-  #container{ display:block}
+
+@media screen and (min-width: 320px) and (max-width: 900px) and (orientation: landscape) {
+  #lock {
+    display: block;
+  }
+
+  #container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  #lock {
+    display: none;
+  }
+
+  #container {
+    display: block
+  }
 }
 
 @media (min-width: 1536px) and (max-width : 1919px) {
 
-  #about{
+  #about {
     height: 140vh;
   }
-  #footer{
+
+  #footer {
     padding-top: 3%;
   }
-  #footerlogo{
+
+  #footerlogo {
     height: 150px;
   }
-  #footerlogosec{
+
+  #footerlogosec {
     gap: 20px;
   }
-  #footercopyright{
+
+  #footercopyright {
     font-size: 14px;
     padding: 8px;
   }
-  #footericons{
+
+  #footericons {
     font-size: 18px;
   }
-  #footercontact{
+
+  #footercontact {
     gap: 10px;
-   
+
   }
-  #announcement{
+
+  #announcement {
     bottom: 6%;
     right: 1%;
   }
-  #annbtn{
+
+  #annbtn {
     padding: 4px;
   }
-  #footer_register_btn{
+
+  #footer_register_btn {
     display: none;
     padding-left: 12px;
     padding-right: 12px;
@@ -311,37 +334,42 @@ code {
     padding-bottom: 6px;
     font-size: 20px;
   }
-  #homecards{
-    
+
+  #homecards {
+
     height: 15%;
     width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
+
   }
-  #xploremore{
+
+  #xploremore {
     margin-top: 14px;
   }
- 
- #mftimg{
-  height: 16rem;
- }
 
- #mftimg2{
-  height: 18rem;
- }
+  #mftimg {
+    height: 16rem;
+  }
 
- #mftimg3{
-  height: 16rem;
- }
- #footeremail {
-  font-size: 13px;
+  #mftimg2 {
+    height: 18rem;
+  }
+
+  #mftimg3 {
+    height: 16rem;
+  }
+
+  #footeremail {
+    font-size: 13px;
+
+  }
+
+  #footermob {
+    font-size: 13px
+  }
+
 
 }
-#footermob{
-  font-size: 13px
-}
 
-  
-}

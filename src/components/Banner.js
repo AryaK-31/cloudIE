@@ -1,7 +1,6 @@
 import React from 'react';
 import bg from '../Images/timbg.webp';
 import food from '../Images/food.webp'
-import trekking from '../Images/trekking.webp'
 import badm from '../Images/badmintonol.webp';
 import hasya from '../Images/hasya.webp'
 import Card from '../components/Card'
@@ -18,17 +17,6 @@ function truncate(str, max_chars) {
 }
 
 const cardData = [
-    {
-        url: 'https://docs.google.com/forms/d/e/1FAIpQLSeWmBWEBsoq0AnjMAMGNVrbkSBL_cTBmTWZ6X4DjIMuU5oKyQ/viewform?usp=sharing',
-        func: truncate('PCCOE Olympics', 17),
-        status: false,
-        cardImg: badm,
-        sportType: 'Badminton',
-        cov: 'object-cover',
-        pos: 'object-center',
-        date: '02-09-2023',
-        className: 'w-[30%]'
-    },
     {
         url: 'https://forms.gle/ubQVc1ZAUwysHuJv5',
         func: truncate('Healthy Food Fair', 17),
@@ -50,7 +38,18 @@ const cardData = [
         pos: 'bg-center',
         date: '14-10-2023',
         className: 'w-[30%]'
-    }
+    },
+    {
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSeWmBWEBsoq0AnjMAMGNVrbkSBL_cTBmTWZ6X4DjIMuU5oKyQ/viewform?usp=sharing',
+        func: truncate('PCCOE Olympics', 17),
+        status: true,
+        cardImg: badm,
+        sportType: 'Badminton',
+        cov: 'object-cover',
+        pos: 'object-center',
+        date: '02-09-2023',
+        className: 'w-[30%]'
+    },
 ];
 
 const renderedCards = cardData.map((card, index) => (
