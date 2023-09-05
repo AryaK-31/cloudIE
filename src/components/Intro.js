@@ -8,7 +8,7 @@ import { BiSolidVolumeFull } from 'react-icons/bi';
 
 function Intro() {
   const [isMuted, setIsMuted] = useState('false');
-  const [soundIcon, setSoundIcon] = useState('false');
+
 
   const toggleMute = () => {
     const video = document.getElementById('intro-vid');
@@ -34,9 +34,9 @@ function Intro() {
 
           <button
             onClick={toggleMute}
-            className='hidden lg:block live-glow absolute z-10 text-white left-10 border-white border-2 px-8 py-2 hover:bg-white hover:text-black transition-colors duration-300 bottom-10 text-2xl'
+            className='lg:block live-glow absolute z-10 text-white left-10 border-white border-2 px-4 py-2 hover:bg-white hover:text-black transition-colors duration-300 bottom-10 text-2xl'
           >
-            {isMuted ? 'Unmute' : 'Mute'}
+            {isMuted ? <BiSolidVolumeMute/> : <BiSolidVolumeFull/>}
           </button>
           <Link to='/mainpage'>
             <button
@@ -49,6 +49,7 @@ function Intro() {
           <video
             id='intro-vid'
             autoPlay
+            loop
             muted={isMuted}
             playsInline
             className="absolute top-0 left-0 h-full w-full object-cover"
@@ -57,9 +58,9 @@ function Intro() {
           </video>
           <button
             onClick={toggleMute}
-            className='live-glow absolute z-10 text-white left-10 border-white border-2 px-8 py-2 hover:bg-white hover:text-black transition-colors duration-300 bottom-10 text-2xl'
+            className='live-glow absolute z-10 text-white left-10 border-white border-2 px-4 py-2 hover:bg-white hover:text-black transition-colors duration-300 bottom-10 text-2xl'
           >
-            {isMuted ? 'Unmute' : 'Mute'}
+             {isMuted ? <BiSolidVolumeMute/> : <BiSolidVolumeFull/>}
           </button>
           <Link to='/mainpage'>
             <button
