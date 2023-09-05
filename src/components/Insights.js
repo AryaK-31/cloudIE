@@ -9,9 +9,6 @@ import tp from "../Images/tp.webp";
 import kt from "../Images/kt.webp";
 
 
-
-
-
 function Insights() {
     return (
         <div id="Insights" className="min-h-[130vh] md:min-h-[220vh] lg:min-h-[90vh] bg-gradient-to-br from-pink-700 via-black to-black py-10 px-4">

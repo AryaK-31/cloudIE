@@ -133,13 +133,13 @@ export default function Navbar() {
 
                                 <li className='block py-1 px-2 hover:bg-gray-200 hover:text-black font-medium lg:text-xs 2xl:text-lg'><Link
                                     activeClass="active"
-                                    to="taskforce"
+                                    to="Insights"
                                     spy={true}
                                     smooth={true}
                                     offset={-110} // Adjust the offset as needed
                                     duration={500} // Adjust the duration of the scroll animation
                                 >
-                                    Taskforce
+                                    Insights
 
                                 </Link></li>
 
@@ -241,13 +241,13 @@ export default function Navbar() {
                     </Link></li>
                     <li><Link onClick={handleNav}
                         activeClass="active"
-                        to="taskforce"
+                        to="Insights"
                         spy={true}
                         smooth={true}
                         offset={-70} // Adjust the offset as needed
                         duration={1500} // Adjust the duration of the scroll animation
                     >
-                        Taskforce
+                        Insights
 
                     </Link></li>
                     <li><Link onClick={handleNav}
