@@ -20,7 +20,7 @@ function Intro() {
   return (
     <>
       {
-        window.innerWidth < 850 ? <div id="intro-frame" className='relative h-[90vh] w-full'>
+        window.innerWidth < 850 ? <div id="intro-frame" className='relative h-[94vh] w-full'>
           <video
             id='intro-vid'
             autoPlay
