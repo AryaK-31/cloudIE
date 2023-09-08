@@ -6,7 +6,15 @@ const events = [
         date: '2 Sept 2023',
         title: 'Badminton - PCCOE Olympics!',
         description: 'All the FY, SY, TY, BE, ME, MCA, and B.Voc students are here to inform you that our sports department and MESA Cell jointly organizing the Inter Class Badminton (Boys & Girls) Competition under PCCOE Olympics.',
+        isLive: false,
+        isDone: true
+    },
+    {
+        date: '9 Sept 2023',
+        title: 'Chess - PCCOE Olympics!',
+        description: 'All the FY, SY, TY, BE, ME, MCA and B.Voc students are hereby inform that our sports department and MESA Cell jointly organizing Inter Class Chess (Boys & Girls) Competition under PCCoE Olymics.',
         isLive: true,
+        isDone: false
     },
     {
         date: '8th Jul 2023',

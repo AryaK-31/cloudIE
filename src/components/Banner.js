@@ -1,7 +1,7 @@
 import React from 'react';
 import bg from '../Images/timbg.webp';
 import food from '../Images/food.webp'
-import badm from '../Images/badmintonol.webp';
+import chess from '../Images/chess.webp';
 import hasya from '../Images/hasya.webp'
 import Card from '../components/Card'
 import Navbar from './Navbar';
@@ -40,14 +40,14 @@ const cardData = [
         className: 'w-[30%]'
     },
     {
-        url: 'https://docs.google.com/forms/d/e/1FAIpQLSeWmBWEBsoq0AnjMAMGNVrbkSBL_cTBmTWZ6X4DjIMuU5oKyQ/viewform?usp=sharing',
+        url: 'https://forms.gle/KLNKeBUdAa7XzT8s9',
         func: truncate('PCCOE Olympics', 17),
-        status: true,
-        cardImg: badm,
-        sportType: 'Badminton',
+        status: false,
+        cardImg: chess,
+        sportType: 'Chess',
         cov: 'object-cover',
         pos: 'object-center',
-        date: '02-09-2023',
+        date: '09-09-2023',
         className: 'w-[30%]'
     },
 ];

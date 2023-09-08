@@ -2,30 +2,12 @@ import React, { useEffect } from 'react';
 import trek from '../Images/trekking.webp';
 import food from '../Images/food.webp';
 import hasya from '../Images/hasya.webp';
-import badm from '../Images/badmintonol.webp';
+import chess from '../Images/chess.webp';
 import { Offcanvas, Ripple, initTE } from 'tw-elements';
 
 function Announcement() {
     const [numOfAnn, setNumOfAnn] = React.useState(0)
     const announcements = [
-        {
-            title: 'Badminton',
-            description: "All the FY, SY, TY, BE, ME, MCA, and B.Voc students are here to inform you that our sports department and MESA Cell jointly organizing the Inter Class Badminton (Boys & Girls) Competition under PCCOE Olympics.",
-            img: badm,
-            link: 'https://docs.google.com/forms/d/e/1FAIpQLSeWmBWEBsoq0AnjMAMGNVrbkSBL_cTBmTWZ6X4DjIMuU5oKyQ/viewform?usp=sharing',
-            date: '02/09/2023',
-            status: true,
-            olympics : true
-        },
-        {
-            title: 'Trek & Plant',
-            description: 'Trekking with Tree Plantation" combines outdoor adventure with environmental conservation. Participants enjoy scenic hikes while actively contributing to reforestation efforts, fostering a deeper connection with nature',
-            img: trek,
-            link: '',
-            date: '09/09/2023',
-            status: false,
-            olympics : false
-        },
         {
             title: 'Healthy Food Fair',
             description: 'A "Healthy Food Fair" showcases nutritious and delicious culinary options, encouraging informed dietary choices. Attendees can explore diverse flavors and gain nutritional insights, promoting a healthier lifestyle.',
@@ -44,9 +26,15 @@ function Announcement() {
             status: true,
             olympics : false
         },
-
-
-
+        {
+            title: 'Chess',
+            description: "All the FY, SY, TY, BE, ME, MCA and B.Voc students are hereby inform that our sports department and MESA Cell jointly organizing Inter Class Chess (Boys & Girls) Competition under PCCoE Olymics.",
+            img: chess,
+            link: 'https://forms.gle/KLNKeBUdAa7XzT8s9',
+            date: '09/09/2023',
+            status: true,
+            olympics : true
+        },
     ];
     useEffect(() => {
         initTE({ Offcanvas, Ripple });
