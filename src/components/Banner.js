@@ -8,6 +8,7 @@ import Navbar from './Navbar';
 import { Link } from 'react-scroll';
 
 
+
 function truncate(str, max_chars) {
     if (str.length <= max_chars) {
         return str;

@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import logo from '../Images/logo.webp'
 import { Link } from 'react-scroll';
-
+import { CgProfile } from 'react-icons/cg'
+import { auth } from '../config/firebase'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
+import { signOut } from 'firebase/auth';
 export default function Navbar() {
     const [showAboutUsDropdown, setShowAboutUsDropdown] = React.useState(false);
 
     const [showActivitesDropdown, setShowActivitesDropdown] = React.useState(false);
+
+    const [showCredDropdown, setShowCredDropdown] = React.useState(false);
 
     const [nav, setNav] = useState(false)
     const [color, setColor] = useState('transparent')
@@ -67,12 +71,32 @@ export default function Navbar() {
 
     }
 
+    const logout = async () => {
+        try {
+            await signOut(auth)
+        } catch (err) {
+            console.error(err)
+        }
+
+    }
+
+
+
+
     const handleAboutUsHover = () => {
         setShowAboutUsDropdown(true);
     };
 
     const handleAboutUsLeave = () => {
         setShowAboutUsDropdown(false);
+    };
+
+    const handleCredHover = () => {
+        setShowCredDropdown(true);
+    };
+
+    const handleCredLeave = () => {
+        setShowCredDropdown(false);
     };
 
     const handleActivitiesHover = () => {
@@ -82,14 +106,53 @@ export default function Navbar() {
     const handleActivitiesLeave = () => {
         setShowActivitesDropdown(false);
     };
+    
 
-
+    const person = auth?.currentUser?.displayName;
 
     return (
         <>
             <div style={{ backgroundColor: `${color}`, transition: `background-color 0.3s ease`, position: `${type}` }} className={`z-[50] navbar text-white flex justify-between 2xl:px-20 2xl:py-8 lg:px-10 lg:py-4 font-bannerfont font-semibold text-lg md:static md:w-full `}>
                 <ul className={`tagline border-${border} ${borderCol} bg-${bg}`}>
-                    <h2 className={`tag 2xl:py-5 2xl:px-5 lg:px-2 lg:py-2 lg:text-base 2xl:text-xl text-${textColor}`}><span className='2xl:text-2xl lg:text-base'>--</span> Commit To Be Fit.</h2>
+
+                    <li
+                        className='relative group flex p-2 w-auto items-center z-50'
+                        onMouseEnter={handleCredHover}
+                        onMouseLeave={handleCredLeave}
+                    >
+
+                        <h2 className='text-3xl'><CgProfile /></h2>
+                        <h2 className={`tag 2xl:py-5 2xl:px-5 lg:px-2 lg:py-2 lg:text-base 2xl:text-xl text-${textColor}`}><span className='2xl:text-2xl lg:text-base'></span>Welcome, {person}</h2>
+                        {showCredDropdown && (
+                            <div className='absolute font-thin text-orange-600 2xl:mt-44 lg:mt-3 bg-black p-2 shadow-md left-0 w-full'>
+
+                                <li className='cursor-pointer block py-1 px-2 hover:bg-gray-200 hover:text-black font-medium lg:text-xs 2xl:text-lg'>
+                                    <Link
+                                        onClick={logout}
+                                    >
+                                        Logout
+
+                                    </Link>
+                                </li>
+
+                                <li className='block py-1 px-2 hover:bg-gray-200 hover:text-black font-medium lg:text-xs 2xl:text-lg'><Link
+                                    activeClass="active"
+                                    to="Insights"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-110} // Adjust the offset as needed
+                                    duration={500} // Adjust the duration of the scroll animation
+                                >
+                                    Insights
+
+                                </Link></li>
+
+                                
+                            </div>
+
+                        )}
+                    </li>
+
                     <GiHamburgerMenu onClick={handleNav} className={`icon lg:hidden text-2xl z-50`} />
 
                 </ul>

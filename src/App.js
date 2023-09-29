@@ -1,12 +1,25 @@
 import './App.css';
 import React from 'react';
-
-import Intro from './components/Intro';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import SignUp from './components/SignUp';
+import SignIn from './components/SignIn';
+import { auth } from './config/firebase';
+import { useAuthState } from 'react-firebase-hooks/auth'
+import Banner from './components/Banner';
 import MainPage from './components/MainPage';
+import Verify from './components/Verify';
 
 function App() {
 
+  const [user] = useAuthState(auth);
+  React.useEffect( () => {
+    const unsubscribe = auth.onAuthStateChanged( (user) => {
+
+    })
+
+    return () => unsubscribe();
+
+  } ,[])
 
   return (
 
@@ -24,8 +37,13 @@ function App() {
 
         <Router>
           <Routes>
-            <Route path="/" element={<Intro />} />
-            <Route path="/mainpage" element={<MainPage />} />
+            <Route path="/" element={<SignIn />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/verify" element={<Verify />} />
+            <Route
+              path="/mainpage"
+              element={user ? <MainPage /> : <Navigate to="/" />}
+            />
           </Routes>
         </Router>
 
